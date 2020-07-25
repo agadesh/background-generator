@@ -24,7 +24,7 @@ h3 {
   font-size: 1.5rem;
 }
 #text {
-  width: 60%;
+  width: 65%;
   padding: 10px;
   font-size: 1.3rem;
   background: #ffffff52;
@@ -62,10 +62,11 @@ button:active {
 }
 input[type="color"] {
   -webkit-appearance: none;
-  border: none;
-  width: 60px;
-  height: 40px;
+  width: 80px;
+  height: 60px;
+  margin: 5px;
   border: 2px solid #000000cf;
+  outline: none;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;

@@ -7,10 +7,11 @@ var alertdone = document.querySelector(".alertdone");
 col1.addEventListener("input", setGradient);
 
 col2.addEventListener("input", setGradient);
+
 function setGradient() {
   alertdone.classList.add("done");
   body.style.background = "linear-gradient(to right," + col1.value + "," + col2.value + ")";
-  text.value = body.style.background;
+  text.value = body.style.background + ";";
 }
 
 // w3
@@ -20,11 +21,20 @@ function myFunction() {
   var copyText = text;
   /* Select the text field */
   copyText.select();
-  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-
+  /*For mobile devices*/
+  copyText.setSelectionRange(0, 99999);
   /* Copy the text inside the text field */
   document.execCommand("copy");
   text.toggleAttribute("disabled");
-  /* Alert the copied text */
   alertdone.classList.toggle("done");
+}
+
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777216).toString(16);
+}
+
+function setRandomColor() {
+  col1.value = getRandomColor();
+  col2.value = getRandomColor();
+  setGradient();
 }
