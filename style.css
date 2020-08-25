@@ -3,7 +3,7 @@
   padding: 0;
   text-align: center;
   color: #00000083;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background: linear-gradient(to right, rgb(50, 179, 130), rgb(50, 184, 151));
@@ -60,7 +60,7 @@ button:active {
 .done {
   display: none;
 }
-input[type="color"] {
+input[type='color'] {
   -webkit-appearance: none;
   width: 80px;
   height: 60px;
@@ -68,6 +68,6 @@ input[type="color"] {
   border: 2px solid #000000cf;
   outline: none;
 }
-input[type="color"]::-webkit-color-swatch-wrapper {
+input[type='color']::-webkit-color-swatch-wrapper {
   padding: 0;
 }
